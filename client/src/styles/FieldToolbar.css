@@ -1,0 +1,133 @@
+.field-toolbar {
+  width: 250px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-section {
+  margin-bottom: 30px;
+}
+
+.toolbar-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.field-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: grab;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.field-button:active {
+  cursor: grabbing;
+  opacity: 0.7;
+}
+
+.field-button:hover {
+  background-color: #efefef;
+  border-color: #667eea;
+}
+
+.field-button .icon {
+  font-size: 16px;
+}
+
+.field-button .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+  background-color: #5568d3;
+}
+
+.toolbar-info {
+  background-color: #f9f9f9;
+  border-left: 3px solid #667eea;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.toolbar-info p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.toolbar-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toolbar-info li {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 6px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.toolbar-info li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .field-toolbar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    max-height: 150px;
+    padding: 15px;
+  }
+
+  .toolbar-section {
+    margin-bottom: 15px;
+  }
+
+  .field-buttons {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .toolbar-info {
+    display: none;
+  }
+}

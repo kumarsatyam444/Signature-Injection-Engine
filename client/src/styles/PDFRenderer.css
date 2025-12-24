@@ -1,0 +1,19 @@
+.pdf-renderer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pdf-canvas-wrapper {
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.pdf-canvas {
+  display: block;
+  border: 1px solid #ddd;
+}
